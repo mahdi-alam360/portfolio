@@ -1,8 +1,8 @@
 const copyButton = document.querySelector('#copy-email');
 copyButton.addEventListener('click', async () => {
   const status = document.querySelector('#copy-status');
-  try { await navigator.clipboard.writeText('mahdi.alam@ryerson.ca'); status.textContent = 'Email address copied.'; }
-  catch { status.textContent = 'mahdi.alam@ryerson.ca — select this address to copy it.'; }
+  try { await navigator.clipboard.writeText('mahdi.alam@torontomu.ca'); status.textContent = 'Email address copied.'; }
+  catch { status.textContent = 'mahdi.alam@torontomu.ca — select this address to copy it.'; }
 });
 const sections = [...document.querySelectorAll('main section[id]')];
 if ('IntersectionObserver' in window) {
