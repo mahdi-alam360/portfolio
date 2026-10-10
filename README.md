@@ -16,8 +16,8 @@ Serve the repository root with any static HTTP server, or open `index.html` in a
 
 ## Hosting
 
-Prepared for static hosting on Vercel. The initial deployment uses Vercel's direct file upload workflow. Git pushes do not trigger deployment until this repository is connected in Vercel.
+The repository is connected to the existing `mahdi-alam-portfolio` Vercel project. Pushes to `main` trigger production deployments. The custom domain is https://mahdialam.com/.
 
 ## Project links
 
-The project repositories linked from the site currently contain documentation; their original source code has not been added.
+The October 2026 AI-assisted Document Search API prototype has executable source and eight passing tests at https://github.com/mahdi-alam360/search-engine-nlp/tree/main/prototype. It implements BM25 retrieval and a REST API on a small toy corpus. Its optional local LLM adapter has not been exercised against a real model. The older project repositories primarily contain documentation; no recovered historical source is claimed.
