@@ -1,0 +1,5 @@
+node_modules/
+dist/
+projects/search-lab/dist/
+.vercel/
+*.log

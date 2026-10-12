@@ -1,0 +1,14 @@
+{
+  "name": "mahdi-portfolio-search-lab",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite projects/search-lab --host 127.0.0.1",
+    "server": "node projects/search-lab/server.mjs",
+    "test": "node --test projects/search-lab/tests/*.test.mjs",
+    "typecheck": "tsc --noEmit",
+    "build": "vite build projects/search-lab && node scripts/build-site.mjs"
+  },
+  "dependencies": {"react": "^19.2.0", "react-dom": "^19.2.0"},
+  "devDependencies": {"@types/react": "^19.2.0", "@types/react-dom": "^19.2.0", "typescript": "^5.9.0", "vite": "^7.1.0"}
+}

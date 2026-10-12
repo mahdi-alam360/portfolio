@@ -1,0 +1,5 @@
+{
+  "buildCommand": "pnpm build", "installCommand": "pnpm install --frozen-lockfile",
+  "outputDirectory": "dist", "framework": null,
+  "rewrites": [{"source": "/search-lab", "destination": "/search-lab/index.html"}]
+}

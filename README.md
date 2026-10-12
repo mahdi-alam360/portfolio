@@ -12,7 +12,7 @@ Software developer portfolio built with HTML, CSS, and JavaScript.
 
 ## Run locally
 
-Serve the repository root with any static HTTP server, or open `index.html` in a browser. No build or package installation is required.
+The portfolio homepage remains static HTML/CSS/JavaScript. The new React/TypeScript search app and Node.js API require `pnpm install`. Run `pnpm server` and `pnpm dev` in separate terminals. Run `pnpm test`, `pnpm typecheck`, and `pnpm build` for verification. See `projects/search-lab/README.md` for architecture and limitations.
 
 ## Hosting
 
@@ -21,3 +21,6 @@ The repository is connected to the existing `mahdi-alam-portfolio` Vercel projec
 ## Project links
 
 The October 2026 AI-assisted Document Search API prototype has executable source and eight passing tests at https://github.com/mahdi-alam360/search-engine-nlp/tree/main/prototype. It implements BM25 retrieval and a REST API on a small toy corpus. Its optional local LLM adapter has not been exercised against a real model. The older project repositories primarily contain documentation; no recovered historical source is claimed.
+
+
+Document Search Lab: https://mahdialam.com/search-lab/ — React, TypeScript, Node.js, BM25 score explanations, and 15 automated tests. Newly built in October 2026 with AI assistance.
