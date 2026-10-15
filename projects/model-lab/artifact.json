@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "features": [
+    "temperature",
+    "vibration",
+    "load",
+    "pressure"
+  ],
+  "input_range": [
+    -3,
+    3
+  ],
+  "model": {
+    "mean": [
+      -0.11780982572195621,
+      -0.133000692199148,
+      -0.02726486121454095,
+      -0.02743674598996939
+    ],
+    "scale": [
+      1.7671801958651003,
+      1.7623014133209671,
+      1.7355067527249692,
+      1.7062617304172276
+    ],
+    "weights": [
+      2.123398660516792,
+      -1.6900243623984195,
+      0.9065937408392938,
+      0.3867477660335176
+    ],
+    "bias": -0.055726616815268595
+  },
+  "metrics": {
+    "accuracy": 0.93,
+    "baseline_accuracy": 0.52,
+    "confusion": {
+      "tp": 90,
+      "tn": 96,
+      "fp": 8,
+      "fn": 6
+    },
+    "train_count": 600,
+    "test_count": 200
+  },
+  "training_seed": 20261015,
+  "test_seed": 20261016,
+  "limitations": "Synthetic independent samples only; no real sensor validation, temporal validation, calibration guarantee, or operational safety use.",
+  "version": "bd917b0c822307b4"
+}

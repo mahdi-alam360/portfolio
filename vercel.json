@@ -11,6 +11,10 @@
     {
       "source": "/roadframe",
       "destination": "/roadframe/index.html"
+    },
+    {
+      "source": "/model-lab",
+      "destination": "/model-lab/index.html"
     }
   ]
 }
