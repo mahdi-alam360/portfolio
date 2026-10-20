@@ -75,7 +75,7 @@ def run(source, database, output):
               'limitations': 'Local synthetic-data learning project. No AWS, production scale, scheduling, or real customer data.'}
     output.parent.mkdir(parents=True, exist_ok=True)
     temp = output.with_suffix(output.suffix + '.tmp')
-    temp.write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')
+    temp.write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8', newline='\n')
     temp.replace(output)
     return report
 
