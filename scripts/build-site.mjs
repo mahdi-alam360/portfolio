@@ -6,3 +6,4 @@ await cp('projects/search-lab/dist', 'dist/search-lab', { recursive: true });
 await cp('projects/roadframe/wwwroot', 'dist/roadframe', { recursive: true });
 
 await cp('projects/model-lab/wwwroot', 'dist/model-lab', { recursive: true });
+await cp('projects/order-pipeline/wwwroot', 'dist/order-pipeline', { recursive: true });

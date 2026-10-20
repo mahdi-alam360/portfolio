@@ -1,0 +1,9 @@
+order_id,order_date,region,amount
+demo-001,2026-10-01,on,19.95
+demo-002,2026-10-02,BC,40.00
+demo-003,2026-10-03,QC,12.50
+demo-004,2026-10-04,ON,30.05
+demo-002,2026-10-05,BC,99.00
+bad-date,2026-02-30,ON,10.00
+bad-amount,2026-10-06,QC,NaN
+bad-region,2026-10-06,XX,10.00

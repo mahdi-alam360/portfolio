@@ -24,3 +24,6 @@ The October 2026 AI-assisted Document Search API prototype has executable source
 
 
 Document Search Lab: https://mahdialam.com/search-lab/ — React, TypeScript, Node.js, BM25 score explanations, and 15 automated tests. Newly built in October 2026 with AI assistance.
+
+
+Order Pipeline: /order-pipeline/ - new AI-assisted Python/SQLite ETL learning project, October 2026. Source and six tests: projects/order-pipeline. Public page shows a generated synthetic report, not a hosted ETL service. No AWS claims.

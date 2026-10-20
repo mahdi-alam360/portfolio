@@ -1,0 +1,19 @@
+name: Order pipeline checks
+on:
+  push:
+    paths: ['projects/order-pipeline/**', '.github/workflows/order-pipeline.yml']
+  pull_request:
+    paths: ['projects/order-pipeline/**', '.github/workflows/order-pipeline.yml']
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest discover -s projects/order-pipeline -p 'test_*.py' -v
+      - run: python projects/order-pipeline/pipeline.py --input projects/order-pipeline/orders.csv --database /tmp/orders.db --output projects/order-pipeline/wwwroot/report.json
+      - run: git diff --exit-code -- projects/order-pipeline/wwwroot/report.json

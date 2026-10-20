@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "synthetic_demo": true,
+  "source_sha256": "ef00328305f2951b0c89c7272bb8c586ebc94c94d31feb93988df84fe36c1d10",
+  "accepted": 4,
+  "rejected": [
+    {
+      "line": 6,
+      "reason": "duplicate order_id in input"
+    },
+    {
+      "line": 7,
+      "reason": "day is out of range for month"
+    },
+    {
+      "line": 8,
+      "reason": "amount must be nonnegative with at most two decimals"
+    },
+    {
+      "line": 9,
+      "reason": "unsupported region"
+    }
+  ],
+  "stored_orders": 4,
+  "regions": [
+    {
+      "region": "BC",
+      "orders": 1,
+      "revenue_cents": 4000
+    },
+    {
+      "region": "ON",
+      "orders": 2,
+      "revenue_cents": 5000
+    },
+    {
+      "region": "QC",
+      "orders": 1,
+      "revenue_cents": 1250
+    }
+  ],
+  "limitations": "Local synthetic-data learning project. No AWS, production scale, scheduling, or real customer data."
+}
